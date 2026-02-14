@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Você ❤️</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('image_0.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            color: #333;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.7); 
+            backdrop-filter: blur(15px); 
+            -webkit-backdrop-filter: blur(15px);
+            padding: 30px 20px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h1 { 
+            color: #3a1c5b; 
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            font-weight: 800;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+        }
+        
+        .foto-perfil {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin: 15px 0;
+        }
+
+        .intro-text { 
+            line-height: 1.5;
+            font-weight: 500;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            color: #1a1a1a;
+        }
+        
+        .spotify-container {
+            margin-bottom: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .carta-btn {
+            background: none;
+            border: none;
+            font-size: 55px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .carta-btn:hover { transform: scale(1.1) rotate(-5deg); }
+
+        #cartaSecreta {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: all 0.8s ease-in-out;
+            text-align: left; 
+            background-color: rgba(255, 255, 255, 0.95); 
+            padding: 0 15px;
+            border-radius: 15px;
+        }
+
+        #cartaSecreta.abierta {
+            max-height: 4000px;
+            opacity: 1;
+            padding: 25px 15px;
+            margin-top: 20px;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.05);
+        }
+
+        .carta-parrafo { 
+            margin-bottom: 12px; 
+            line-height: 1.6; 
+            color: #444; 
+            font-size: 0.9rem;
+        }
+        
+        .firma {
+            text-align: center;
+            font-weight: bold;
+            color: #3a1c5b;
+            margin-top: 25px;
+            font-size: 1rem;
+        }
+
+        .imagen-final {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Feliz Aniversário, meu amor!</h1>
+        
+        <img src="foto-pareja.jpeg" alt="Nós" class="foto-perfil">
+        
+        <p class="intro-text">
+            "Feliz aniversário", isso é a primeira coisa que quero te dizer meu amor. "Feliz aniversário" para a garota que soube conquistar o meu coração. Eu quis ser a primeira pessoa a te dizer feliz aniversário e a expressar todas as coisas lindas que sinto por você, meu amor ❤️.
+        </p>
+        
+        <p class="intro-text" style="font-weight: 700;">Dê play na nossa música... 🎵</p>
+        
+        <div class="spotify-container">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6Qyc6fS4DsZjB2mRW9DsQs?utm_source=generator&theme=45" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="carta-container">
+            <button id="botonAbrir" class="carta-btn">💌</button>
+            <br><span style="font-weight:700; font-size:13px;">(Clique para ler a carta)</span>
+        </div>
+
+        <div id="cartaSecreta">
+            <p class="carta-parrafo">Olá de novo, minha vida. Enquanto você escuta a música, eu queria te desejar um feliz aniversário da minha parte novamente. Neste dia tão especial para você, quero que saiba que em tão pouco tempo você se tornou uma pessoa muito importante para mim. Quero que saiba que eu estou aqui para você quando precisar, que te amo tanto e que não se esqueça disso; pois você é a garota que eu mais amo.</p>
+
+            <p class="carta-parrafo">Eu sei que tivemos algumas discussões e que virão muitas outras, mas eu gostaria que sempre nos resolvêssemos e estivéssemos bem, como temos feito até agora. Embora o nosso aniversário de namoro já tenha passado, espero que você goste disso também. Sei que é um pouco tarde para dizer, mas feliz aniversário de namoro! Espero que o que temos não termine logo, porque eu te quero para mim por muito tempo.</p>
+
+            <p class="carta-parrafo">Sinto muita alegria por ter te conhecido e me sinto feliz por você estar presente na minha vida 💕. Meu amor, acredite que nestes momentos eu gostaria de estar na sua frente, poder te olhar nos olhos (que por sinal eu gosto tanto) e te desejar o melhor do melhor. Gostaria de te dar um beijo, um abraço e dizer que você é uma pessoa incrível. Me sinto feliz por você, por ter você ao meu lado e gostaria de sentir o calor do seu corpo junto ao meu da maneira mais inocente possível.</p>
+
+            <p class="carta-parrafo">Aproveite muito o seu dia, que Deus te abençoe e te dê muitos anos mais de vida, e que Ele me permita poder estar ao seu lado. Não sei o que o futuro nos reserva, mas quero que seja ao seu lado, amor.</p>
+            
+            <p class="firma">
+                EU TE AMO TANTO MEU AMOR, NUNCA DUVIDE DISSO 💞💓<br>
+                FELIZ ANIVERSÁRIO AMOR DA MINHA VIDA💞💕<br><br>
+                - Seu Namorado
+            </p>
+
+            <img src="final.jpeg" alt="Te amo" class="imagen-final">
+        </div>
+    </div>
+
+    <script>
+        const boton = document.getElementById('botonAbrir');
+        const carta = document.getElementById('cartaSecreta');
+
+        boton.addEventListener('click', function() {
+            carta.classList.toggle('abierta');
+            boton.innerHTML = carta.classList.contains('abierta') ? '📨' : '💌';
+        });
+    </script>
+</body>
+</html>
